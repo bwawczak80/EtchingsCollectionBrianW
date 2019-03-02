@@ -81,7 +81,6 @@ public class BookData {
                         "a hundred family members, friends, adversaries, competitors, and colleagues, Walter Isaacson has written a riveting story of the roller-coasterlife and searingly" +
                         "intense personality of a creative entrepreneur."));
 
-
         addToList(new ListData("The FountainHead", "Ayn Rand", "Fiction", "This book is based on a challenging belief in the " +
                 "importance of selfishness, on the provocative idea that man's ego is the fountainhead of human progress.  "));
 

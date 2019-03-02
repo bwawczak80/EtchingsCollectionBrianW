@@ -15,7 +15,8 @@ public class BookList extends AppCompatActivity {
     // reference to the data list
     List<ListData> dataItemList = BookData.dataItemList;
 
-    List<String> itemNames = new ArrayList<>();
+    List<String> bookTitle = new ArrayList<>();
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,15 +25,18 @@ public class BookList extends AppCompatActivity {
 
         for (ListData item : dataItemList) {
 
-            itemNames.add(item.getBookTitle());
+            bookTitle.add(item.getBookTitle());
+
 
         }
         //sort data
-        Collections.sort(itemNames);
+        Collections.sort(bookTitle);
 
 
-        ArrayAdapter<String> adapter = new ArrayAdapter<>(
-                this, android.R.layout.simple_list_item_1, itemNames);
+       ArrayAdapter<String> adapter = new ArrayAdapter<>(
+                this, android.R.layout.simple_list_item_1
+               , bookTitle);
+
 
         //bind array adaptor to the list view
         ListView listView = findViewById(android.R.id.list);
